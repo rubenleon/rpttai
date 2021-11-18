@@ -2,6 +2,16 @@
 		font-weight:800
 }
 
+.ext-links
+{
+	position: fixed;
+    top: 8.5em;
+    right: 1.5em;
+	width:46px;
+	background-color:transparent;
+
+}
+
 .rpt-tit{
 	
 	color:black;
