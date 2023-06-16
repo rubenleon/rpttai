@@ -2,7 +2,6 @@
 //asignar un nombre y versión al cache
 const CACHE_NAME = 'v1_pwa_app_cache',
   urlsToCache = [
-    './',
     'css/style.css',
     'js/script.js',
     'img/mainlogo.png',
