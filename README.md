@@ -1,9 +1,11 @@
 
 # RPT TAI
 
-Relación de Puesto de Trabajo de TAI y GSI en la AGE
+Consulta de puestos de trabajo de Informática en la Administración General del Estado
 
 https://rubenleon.github.io/rpttai/
 
-Fuente oficial: https://transparencia.gob.es/transparencia/transparencia_Home/index/PublicidadActiva/OrganizacionYEmpleo/Relaciones-Puestos-Trabajo.html
+Fuente oficial: 
+
+https://transparencia.gob.es/transparencia/transparencia_Home/index/PublicidadActiva/OrganizacionYEmpleo/Relaciones-Puestos-Trabajo.html
 
