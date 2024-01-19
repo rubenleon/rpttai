@@ -4,20 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/rpttai/assets/logo-7d55b820.ico" />
-    <title>Consulta de puestos de trabajo de Informática en la AGE</title>
+    <title>Consulta de puestos de trabajo de informática en la AGE</title>
 
     <meta name="robots" content="index, follow">
-
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
-   
-
-        
     <!-- HTML Meta Tags -->
     <meta name="description" content="Consulta la Relación de Puestos de Trabajo de Informática de la Administración General del Estado. RPT actualizada en Septiembre del 2023 "/>
     <meta name="keywords" content="consulta de puestos de trabajo ,puestos informática,RPT, Relación de Puestos de Trabajo, Tai, Técnico Auxiliar de Informática, Destinos TAI, Plazas TAI, Administración General del Estado, Plazas GSI, Gestor de Sistemas Informaticos (GSI) en la AGE (Administración General del Estado), rpt GSI"/>
     
-
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://github.com/rubenleon/rpttai">
     <meta property="og:type" content="website">
@@ -39,38 +34,31 @@
     <script defer src="https://overtracking.com/p/y03KKF1ULAmROUm9"></script>
     <!-- END Pixel Code -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script type="module" crossorigin src="/rpttai/assets/index-9d0c9457.js"></script>
-  <link rel="stylesheet" href="/rpttai/assets/index-63c93963.css">
-</head>
-<body>
-   
-       
+    
+    <script type="module" crossorigin src="/rpttai/assets/index-7279ff47.js"></script>
+    <link rel="stylesheet" href="/rpttai/assets/index-110bc8a8.css">
 
-        <header class="p-3 mb-2 text-white color-primary">
-            <div class="container">
-                <h1><a href="./">Consulta de puestos de trabajo de Informática en la AGE</a></h1>
-                <p class="update"><strong>Actualizado: </strong>1 de Septiembre del 2023<br />
-                    <strong>Fuente de datos: </strong><a href="https://transparencia.gob.es/transparencia/transparencia_Home/index/PublicidadActiva/OrganizacionYEmpleo/Relaciones-Puestos-Trabajo.html" target="_blank" rel="noopener noreferrer">Portal de la transparencia A.G.E.</a>
+    <body>
+        <header class="header">
+            <aside id="header-logo">
+                <a href="./"><img src="/rpttai/assets/mainlogo-d2d17e15.png" alt="" /></a>
+            </aside>
+            <section id="header-info">
+                <h1>
+                    <a href="./">Consulta de puestos de trabajo de Informática en la A.G.E.</a>
+                </h1>
+                <p class="update">
+                    <strong>Actualizado: </strong>1 de Septiembre del 2023<br />
+                    
                 </p>
-            </div>
+            </section>
         </header>
 
         <div class="container contenedor">
-            <h1><i class="bi bi-info-circle"></i> Formulario de búsqueda: <i class="bi bi-info-circle"></i></h1>
+            <h1><i class="bi bi-info-circle"></i> Filtro de búsqueda:</h1>
             <form id="form-buscar" class="container">
                 <div id="form-todo">
                     <div class="form-espacio">
-                        <!-- <input id="search" class="form-control" list="datalistOptions" id="DataList" placeholder="Escribe tu provincia ... ">
-                        <datalist id="datalistOptions">
-                            <option value="burgos">
-                            <option value="madrid">
-                            <option value="Cáceres">
-                            <option value="Sevilla">
-                            <option value="Santa Cruz de Tenerife">
-                            <option value="Asturias">
-                        </datalist> -->
                         <select id="search" class="form-select" aria-label="¿Provincia?">
                             <option selected>¿Provincia?</option>
                             <option value="28">Madrid</option>
@@ -128,7 +116,7 @@
                         </select>
                     </div>
                     <div class="form-espacio">
-                        <button id="btn_enviar"  type="submit" class="btn btn-primary"><i class="bi bi-search"></i> Buscar RPT</button>
+                        <button id="btn_enviar"  type="submit" class="btn btn-primary"><i class="bi bi-search"></i> Buscar</button>
                        
                     </div>
                     <div class="form-espacio">
@@ -137,7 +125,7 @@
                 </div>
                 <div>
                     <div class="form-espacio">
-                        <label for="">Cuerpo (A1,A2,C1 ... ): </label>
+                        <label for="cuerpo">Cuerpo (A1,A2,C1 ... ): </label>
                     </div>
                     <div class="form-espacio">
                         <select id="cuerpo" class="form-select" aria-label="¿Cuerpo?">
@@ -153,7 +141,7 @@
                 </div>
                 <div>
                     <div class="form-espacio">
-                        <label for="">Estado del puesto: </label>
+                        <label for="sVacantes">Estado del puesto: </label>
                     </div>
                     <div class="form-espacio">
                         <select id="sVacantes" class="form-select" aria-label="¿Vacante?">
@@ -172,12 +160,14 @@
             <p>
                 
                 <br />
-                <strong>Issues: </strong><a href="https://github.com/rubenleon/rpttai/issues">¿Alguna sugerencia? 😎</a>
+                <strong>Issues: </strong><a href="https://github.com/rubenleon/rpttai/issues">¿Alguna sugerencia? 😎</a><br />
+                <strong>Fuente de datos: </strong><a href="https://transparencia.gob.es/transparencia/transparencia_Home/index/PublicidadActiva/OrganizacionYEmpleo/Relaciones-Puestos-Trabajo.html" target="_blank" rel="noopener noreferrer">Portal de la transparencia A.G.E.</a>
             </p>
             <div class="logo-github">
-              <a href="https://github.com/rubenleon/rpttai" title="enlace al repositorio de GitHub" target="_blank"><img alt="Logo de GitHub" src="data:image/jpeg;base64,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"></a>  
+              <p><a href="https://github.com/rubenleon/rpttai" title="enlace al repositorio de GitHub" target="_blank"> 2024 - <i class="bi bi-github"></i> rpttai</a></p>
             </div>
-            <p>2024 - rpttai</p>
+            
+           
         </footer>
     </div>
 
