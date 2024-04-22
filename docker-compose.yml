@@ -7,3 +7,4 @@ services:
       - "8080:80"
     volumes:
       - ./docs:/usr/share/nginx/html/rpttai
+    container_name: rpttai
