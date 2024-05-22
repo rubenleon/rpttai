@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="https://rubenleon.github.io/rpttai/logo.ico" />
-    <title>Consulta de puestos de trabajo de informática en la AGE</title>
+    <title>Relación de Puestos de Trabajo (RPT) de Informática de la Administración General del Estado (AGE)</title>
 
     <meta name="robots" content="index, follow">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
     <!-- HTML Meta Tags -->
-    <meta name="description" content="Consulta la Relación de Puestos de Trabajo de Informática de la Administración General del Estado. RPT actualizada en Septiembre del 2023 "/>
+    <meta name="description" content="Relación de Puestos de Trabajo (RPT) de Informática de la Administración General del Estado (AGE). RPT actualizada en 11 de abril de 2024"/>
     <meta name="keywords" content="Consulta de puestos de trabajo, Puestos informática,RPT, Relación de Puestos de Trabajo, Tai, Técnico Auxiliar de Informática, Destinos TAI, Plazas TAI, Administración General del Estado, Plazas GSI, Gestor de Sistemas Informaticos (GSI) en la AGE (Administración General del Estado), rpt GSI"/>
     
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://github.com/rubenleon/rpttai">
+    <meta property="og:url" content="https://rubenleon.github.io/rpttai/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Consulta de puestos de trabajo de Informática en la AGE">
-    <meta property="og:description" content="Consulta la Relación de Puestos de Trabajo de Informática de la Administración General del Estado. RPT actualizada en Septiembre del 2023 ">
+    <meta property="og:title" content="Relación de Puestos de Trabajo (RPT) de Informática de la Administración General del Estado (AGE)">
+    <meta property="og:description" content="Consulta la Relación de Puestos de Trabajo de Informática de la Administración General del Estado. RPT actualizada en 11 de abril de 2024">
     <meta property="og:image" content="https://rubenleon.github.io/rpttai/mainlogo.png">
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="Puestos de Trabajo de Informática de la AGE (Administración General del Estado)">
+    <meta name="twitter:card" content="Relación de Puestos de Trabajo (RPT) de Informática de la Administración General del Estado (AGE)">
     <meta property="twitter:domain" content="website">
-    <meta property="twitter:url" content="https://github.com/rubenleon/rpttai">
+    <meta property="twitter:url" content="https://rubenleon.github.io/rpttai/">
     <meta name="twitter:title" content="Consulta de puestos de trabajo de Informática en la AGE">
-    <meta name="twitter:description" content="Consulta la Relación de Puestos de Trabajo de Informática de la Administración General del Estado. RPT actualizada en Septiembre del 2023 ">
+    <meta name="twitter:description" content="Consulta la Relación de Puestos de Trabajo de Informática de la Administración General del Estado. RPT actualizada en 11 de abril de 2024">
     <meta name="twitter:image" content="https://rubenleon.github.io/rpttai/mainlogo.png">
-    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    <!-- Meta Tags -->
         
 
     <!-- Pixel Code for https://overtracking.com/ -->
@@ -35,25 +35,25 @@
     <!-- END Pixel Code -->
 
     
-    <script type="module" crossorigin src="/rpttai/assets/index-DvF8JJeA.js"></script>
-    <link rel="stylesheet" crossorigin href="/rpttai/assets/index-N7iFOo0Y.css">
+    <script type="module" crossorigin src="/rpttai/assets/index-CegJjxEj.js"></script>
+    <link rel="stylesheet" crossorigin href="/rpttai/assets/index-Byjcrx89.css">
 
     <body class="container">
         <header>
             <img src="/rpttai/assets/mainlogo-99fNhQ3s.png" alt="logo de tai" />
             <hgroup>
-                <h1><a href="./">Puestos de trabajo de Informática en la Administración General del Estado (AGE)</a></h1>
+                <h1><a href="https://rubenleon.github.io/rpttai/">Relación de Puestos de Trabajo (RPT) de Informática de la Administración General del Estado (AGE)</a></h1>
                 <p><strong>Actualizado: </strong>11 de abril de 2024</p>
             </hgroup>
         </header>
 
         <main>
-            <h2 id="filtro">Filtro de búsqueda:</h2>
+            <div id="filtro">Filtrar búsqueda:</div>
             <form>
                 <fieldset>
-                    <label>
-                        Provincia: 
-                        <select id="search" class="form-select" aria-label="¿Provincia?">
+                    <div>
+                        <label>Provincia: </label>
+                        <select id="search" class="selectC" aria-label="¿Provincia?">
                             <option value="todas" selected>Todas</option>
                             <option value="28">Madrid</option>
                             <option value="24">León</option>
@@ -108,28 +108,34 @@
                             <option value="08">Barcelona</option>
                             <option value="09">Burgos</option>
                         </select>
-                    </label>
-                    <label>
-                        Cuerpo (A1,A2,C1 ... ): 
-                        <select id="cuerpo" class="form-select" aria-label="¿Cuerpo?">
-                            <option value="TODOS" selected>Todos</option>
-                            <option value="C2">C2</option>
-                            <option value="C1">C1</option>
-                            <option value="B">B</option>
-                            <option value="A2">A2</option>
-                            <option value="A1">A1</option>
-                        </select>
-                    </label>
-                    <label>
-                        Estado del puesto: 
-                        <select id="sVacantes" class="form-select" aria-label="¿Vacante?">
-                            <option value="TODOS" selected>Todos (V, NV)</option>
-                            <option value="V">Vacantes</option>
-                            <option value="NV">No Vacantes</option>
-                        </select>
-                    </label>
+                        
+                    </div>
+                    <div>
+                        
+                            <label>Cuerpo: </label>
+                            <select id="cuerpo" class="selectC" aria-label="¿Cuerpo?">
+                                <option value="TODOS" selected>Todos</option>
+                                <option value="C2">C2</option>
+                                <option value="C1">C1</option>
+                                <option value="B">B</option>
+                                <option value="A2">A2</option>
+                                <option value="A1">A1</option>
+                            </select>
+                        
+                    </div>
+                    <div>
+                            <label>Estado: </label>
+                            <select id="sVacantes" class="selectL" aria-label="¿Vacante?">
+                                <option value="TODOS" selected>Todos (V, NV)</option>
+                                <option value="V">Vacantes (V)</option>
+                                <option value="NV">No Vacantes (NV)</option>
+                            </select>
+                       
+                    </div>
 
-                    <button id="btn_enviar"  type="submit" class="btn btn-primary"><i class="bi bi-search"></i> Buscar</button>
+                    <div>
+                        <button id="btn_enviar"  type="submit" class="btn btn-primary"><i class="bi bi-search"></i> Buscar</button>
+                    </div>
                     <!-- <button id="btn_info"  type="submit" class="btn btn-info"><i class="bi bi-info-square"></i> Información</button> -->
                 
 
