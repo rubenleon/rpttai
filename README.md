@@ -1,6 +1,10 @@
 
-## RPTTAI
+## RPT Informática
 
-### Relación de puestos de trabajo (RPT) del personal IT de la Adminsitración General del Estado (AGE) por provincias. 
+### Relación de Puestos de Trabajo (RPT) de Informática en la AGE (Administración General del Estado)
 
-#### consulta la web: https://rpt.ovh
+- Fuente original: https://transparencia.gob.es/transparencia/transparencia_Home/index/PublicidadActiva/OrganizacionYEmpleo/Relaciones-Puestos-Trabajo.html
+
+#### Consulta la web: https://rpt.ovh 
+
+
