@@ -8,4 +8,4 @@ COPY ./docs /usr/share/nginx/html
 #EXPOSE 80
 
 # Command to run the nginx server
-#CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
