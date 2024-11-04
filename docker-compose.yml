@@ -1,10 +1,11 @@
 version: '3'
 services:
   web:
-    #build: .
-    image: nginx:alpine
+    build: .
+    #image: nginx:alpine
     ports:
       - "8080:80"
     volumes:
-      - ./docs:/usr/share/nginx/html/rpttai
-    container_name: rpttai
+      - ./docs:/usr/share/nginx/html
+    command: ["nginx", "-g", "daemon off;"]
+    container_name: rptageinformatica
