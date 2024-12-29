@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://rpt.ovh/</loc>
+    <lastmod>2024-12-29</lastmod> <!-- Fecha de última actualización -->
+    <changefreq>monthly</changefreq> <!-- Frecuencia de actualización mensual -->
+    <priority>1.0</priority> <!-- Prioridad máxima porque es la única página -->
+  </url>
+</urlset>
