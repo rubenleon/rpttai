@@ -1,10 +1,11 @@
 services:
   web:
-    build: .
-    #image: nginx:alpine
+    #build: .
+    image: nginx:alpine
     ports:
       - "8080:80"
     volumes:
       - ./docs:/usr/share/nginx/html
-    command: ["nginx", "-g", "daemon off;"]
+    #command: ["nginx", "-g", "daemon off;"] #No es necesario
+    restart: unless-stopped
     container_name: rpt.ovh
