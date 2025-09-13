@@ -66,12 +66,6 @@
         border-radius: 5px;">Aceptar</button>
     </div>
 
-    
-
-    <!-- Chart.js -->
-    <!-- npm install chart.js -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
-
     <style>
       :root{
         --brand-1:#0d47a1; /* título */
@@ -100,6 +94,46 @@
         transform: translateY(-3px);
         box-shadow: 0 12px 22px rgba(0, 0, 0, 0.12);
       }
+      
+      .borde-animado {
+        border: 1px solid #4a90e2; /* azul suave */
+        border-radius: 12px;
+        box-shadow: 0 0 8px rgba(74, 144, 226, 0.6);
+        animation: pulso-y-mover 8s forwards;
+        transition: border-color 0.5s ease;
+        position: relative;
+      }
+
+      @keyframes pulso-y-mover {
+        0% {
+          border-color: #4a90e2;
+          box-shadow: 0 0 12px rgba(74, 144, 226, 0.8);
+          transform: translateX(0);
+        }
+        10%, 30%, 50%, 70%, 90% {
+          border-color: rgba(74, 144, 226, 1);
+          box-shadow: 0 0 20px rgba(74, 144, 226, 0.6);
+        }
+        20%, 40%, 60%, 80% {
+          border-color: rgba(74, 144, 226, 0.6);
+          box-shadow: 0 0 28px rgba(74, 144, 226, 0.4);
+        }
+        15%, 35%, 55%, 75%, 95% {
+          transform: translateX(12px);
+        }
+        0%, 25%, 45%, 65%, 85%, 100% {
+          transform: translateX(0);
+        }
+        100% {
+          background: #fff;
+          border-radius: 1.2rem;
+          padding: 2rem;
+          margin-bottom: 2rem;
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+          transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+      }
+
       h2 { margin-bottom: 1rem; font-weight: 800; color: #124270; }
 
       /* Botones refinados */
@@ -153,8 +187,8 @@
       }
       footer a { margin: 0 1rem; font-weight: 600; }
     </style>
-    <script type="module" crossorigin src="/assets/index-CPuaNQQu.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/style-TBYWEVep.js">
+    <script type="module" crossorigin src="/assets/style-CZqZCQWb.js"></script>
+    <script type="module" crossorigin src="/assets/buscador-CL5Hhg-n.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/style-Q1SHNjEU.css">
   </head>
   <body>
@@ -188,21 +222,21 @@
       </section>
 
       <!-- Botones principales -->
-      <section aria-labelledby="explora">
+      <section class="borde-animado" aria-labelledby="explora">
         <h2 id="explora">🏦 Explora las plazas: </h2>
         <div class="buttons" role="group" aria-label="Acciones principales">
           <a href="/buscador" role="button" class="contrast" aria-label="Filtrar plazas por provincia, cuerpo y vacante">
             🔎 Filtrar plazas
           </a>
           <a href="/nuevos-puestos" role="button" class="secondary" aria-label="Nuevas plazas de la última RPT">
-            📊 Nuevas Puestos <small>(RPT de 1 de Septiembre del 2025)</small>
+            📊 Nuevos Puestos<small>(RPT de 1 de Septiembre del 2025)</small>
           </a>
         </div>
       </section>
 
       <!-- Gráfica -->
       <section aria-labelledby="chart-title">
-        <h2 id="chart-title">🌇Distribución por cuerpos de informática:</h2>
+        <h2 id="chart-title">🌇 Distribución por cuerpos de informática:</h2>
         <div style="width:80%;margin:0 auto"><canvas id="chartCuerpos" height="300" aria-label="Gráfico de barras por cuerpos" role="img"></canvas></div>
       </section>
 
