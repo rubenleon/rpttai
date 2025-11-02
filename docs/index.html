@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RPT de Informática del Estado/AGE</title>
+    <title>RPT de Informática en la Administración General del Estado en 2025</title>
 
-    <meta name="robots" content="index, follow">
+    
     
     <link type="shortcut icon" href="/logo.ico" />
     <link rel="icon" type="image/webp" href="/logo.webp" />
@@ -16,8 +16,11 @@
     <!-- Autor -->
     <meta name="author" content="@rubenleon" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://rpt.ovh/" />
+    <!-- Canonical / sitemap -->
+    <link rel="canonical" href="https://rpt.ovh/">
+    <link rel="sitemap" type="application/xml" href="https://rpt.ovh/sitemap.xml">
+    <meta name="robots" content="index, follow">
+    <meta name="date" content="2025-09-01" scheme="YYYY-MM-DD">
 
     <!-- Open Graph -->
     <meta property="og:url" content="https://rpt.ovh/" />
@@ -35,157 +38,110 @@
     <meta name="twitter:image" content="https://rpt.ovh/rptovh_02.webp" />
     
     <script defer src="https://cdn.overtracking.com/t/t83haGhqXRue17Bid/"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"rel="stylesheet"/>
 
-    
+    <!-- Datos estructurados Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "RPT.OVH",
+      "url": "https://rpt.ovh/",
+      "description": "Organiza las plazas (RPT) de informática en la Administración General del Estado (AGE) por provincia, cuerpo y ministerio. Información siempre actualizada.",
+      "dateModified": "2025-09-01",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Person",
+        "name": "Rubén León"
+      }
+    }
+    </script>
+   
 
 
-    <style>
-      :root{
-        --brand-1:#0d47a1; /* título */
-        --brand-2:#1565c0; /* acentos */
-        --bg-1:#fdfdfd;
-        --bg-2:#f5f7fa;
-      }
-      body {
-        background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
-        color: #1c1c1e;
-      }
-
-     
-
-      /* Secciones tipo “card” */
-      main.container { margin-top: 1.8rem; }
-      section {
-        background: #fff;
-        border-radius: 1.2rem;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-        transition: transform 0.25s ease, box-shadow 0.25s ease;
-      }
-      section:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 12px 22px rgba(0, 0, 0, 0.12);
-      }
-      
-      .borde-animado {
-        border: 1px solid #4a90e2; /* azul suave */
-        border-radius: 12px;
-        box-shadow: 0 0 8px rgba(74, 144, 226, 0.6);
-        animation: pulso-y-mover 8s forwards;
-        transition: border-color 0.5s ease;
-        position: relative;
-      }
-
-      @keyframes pulso-y-mover {
-        0% {
-          border-color: #4a90e2;
-          box-shadow: 0 0 12px rgba(74, 144, 226, 0.8);
-          transform: translateX(0);
-        }
-        10%, 30%, 50%, 70%, 90% {
-          border-color: rgba(74, 144, 226, 1);
-          box-shadow: 0 0 20px rgba(74, 144, 226, 0.6);
-        }
-        20%, 40%, 60%, 80% {
-          border-color: rgba(74, 144, 226, 0.6);
-          box-shadow: 0 0 28px rgba(74, 144, 226, 0.4);
-        }
-        15%, 35%, 55%, 75%, 95% {
-          transform: translateX(12px);
-        }
-        0%, 25%, 45%, 65%, 85%, 100% {
-          transform: translateX(0);
-        }
-        100% {
-          background: #fff;
-          border-radius: 1.2rem;
-          padding: 2rem;
-          margin-bottom: 2rem;
-          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-          transition: transform 0.25s ease, box-shadow 0.25s ease;
-        }
-      }
-
-      h2 { margin-bottom: 1rem; font-weight: 800; color: #124270; }
-
-      /* Botones refinados */
-      .buttons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-top: 1rem;
-        flex-wrap: wrap;
-      }
-      .buttons a[role="button"] {
-        border-radius: .8rem;
-        padding: .95rem 1.5rem;
-        font-weight: 700;
-        display: inline-flex;
-        align-items: center;
-        gap: .55rem;
-        box-shadow: 0 3px 8px rgba(0, 0, 0, .08);
-        transition: transform .2s ease, box-shadow .2s ease;
-      }
-      .buttons a[role="button"]:hover,
-      .buttons a[role="button"]:focus {
-        transform: translateY(-1px);
-        box-shadow: 0 8px 16px rgba(0,0,0,.12);
-        outline: none;
-      }
-
-      /* Contenedor de comentarios */
-      .comments {
-        max-height: 260px;
-        overflow-y: auto;
-        border: 1px solid var(--muted-border-color);
-        padding: 1rem;
-        border-radius: 1rem;
-        background: #fafafa;
-      }
-      .comments p {
-        margin: .5rem 0;
-        padding: .6rem .8rem;
-        background: #ffffff;
-        border-radius: .6rem;
-        box-shadow: 0 1px 4px rgba(0,0,0,.06);
-      }
-
-      /* Footer */
-      footer {
-        text-align: center;
-        padding: 2rem 0;
-        font-size: .95rem;
-        opacity: .88;
-      }
-      footer a { margin: 0 1rem; font-weight: 600; }
-    </style>
-    <script type="module" crossorigin src="/assets/index-CPuaNQQu.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/style-TBYWEVep.js">
-    <link rel="stylesheet" crossorigin href="/assets/style-Q1SHNjEU.css">
+    <script type="module" crossorigin src="/assets/index-DSZS6iKB.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/githubStart-BWgQO704.js">
+    <link rel="stylesheet" crossorigin href="/assets/githubStart-Bn7gFQmE.css">
+    <link rel="stylesheet" crossorigin href="/assets/main-D6Zrwwpm.css">
   </head>
   <body>
     <!-- Cabecera -->
-    <header>
-        <img src="/rptovh_02.webp" alt="Logo de rpt.ovh de informática de la age" />
-        <hgroup>
-            <h1><a href="https://rpt.ovh/">Puestos de Informática en el Estado (AGE)</a></h1>
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                    <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4"></path>
-                    <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4"></path>
-                  </svg>
-                
-                <strong>Actualizado: </strong><a href="https://transparencia.gob.es/transparencia/transparencia_Home/index/PublicidadActiva/OrganizacionYEmpleo/Relaciones-Puestos-Trabajo.html" target="_blank" rel="noopener noreferrer">
-                    1 de Septiembre del 2025</a>
-            </p>
-            <!-- <p><small>Última actualización: <span id="update-date"></span></small></p> -->
-        </hgroup>
-    </header>
+  <header>
+    <div class="header-logo">
+      <div class="header-svg">
+        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path
+            clip-rule="evenodd"
+            d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          ></path>
+        </svg>
+      </div>
+      <h1><a href="/">rpt.ovh</a></h1>
+    </div>
+
+    <!-- Checkbox oculto para controlar el menú -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+    <!-- Botón hamburguesa -->
+    <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M3 6h18M3 12h18M3 18h18"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+    </label>
+    <nav class="header-nav" aria-label="Menú de navegación principal">
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/buscador">Buscador</a></li>
+        <li><a href="/nuevos-puestos">Nuevos Puestos</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-social-links">
+      <a href="https://github.com/rubenleon/rpttai"
+        title="Repositorio de GitHub"
+        target="_blank">
+        <svg
+          viewBox="0 0 16 16"
+          aria-hidden="true"
+          width="32"
+          height="32"
+          astro-icon="social/github">
+          <path
+            fill="currentColor"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+            1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+            0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12
+            0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68
+            0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44
+            1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
+            0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54
+            1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012
+            8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+          ></path>
+        </svg>
+        <span id="starts">14</span>
+      </a>
+    </div>
+  </header>
+
 
     <!-- Explicación -->
     <main class="container">
-      <section>
+
+      <div class="main-titulo">
+        <h1>Puestos de Informática en el Estado (AGE)</h1>
+        <p>Actualizado: <time datetime="2025-09-01" itemprop="dateModified">1 de Septiembre del 2025</time></p>  
+      </div>
+
+      <section class="main-seciones" aria-labelledby="que-es-rptovh">
         <h2>¿Qué es RPT.OVH?</h2>
          <p>
             ✨ <strong>RPT.OVH</strong> es una página que organiza las plazas de 
@@ -195,22 +151,76 @@
       </section>
 
       <!-- Botones principales -->
-      <section class="borde-animado" aria-labelledby="explora">
-        <h2 id="explora">🏦 Explora las plazas: </h2>
+      <section class=".main-seciones_2" aria-labelledby="explora">
         <div class="buttons" role="group" aria-label="Acciones principales">
-          <a href="/buscador" role="button" class="contrast" aria-label="Filtrar plazas por provincia, cuerpo y vacante">
+          <a href="/buscador" role="button" class="buscar-plazas" aria-label="Filtrar plazas por provincia, cuerpo y vacante">
             🔎 Filtrar plazas
           </a>
-          <a href="/nuevos-puestos" role="button" class="secondary" aria-label="Nuevas plazas de la última RPT">
-            📊 Nuevos Puestos<small>(RPT de 1 de Septiembre del 2025)</small>
+          <a href="/nuevos-puestos" role="button" class="nuevas-plazas" aria-label="Nuevas plazas de la última RPT">
+            📊 Nuevos Puestos
           </a>
         </div>
       </section>
 
-      <!-- Gráfica -->
-      <section aria-labelledby="chart-title">
+       <!-- Gráfica -->
+      <!-- 
+      <section class="main-seciones" aria-labelledby="chart-title">
         <h2 id="chart-title">🌇 Distribución por cuerpos de informática:</h2>
-        <div style="width:80%;margin:0 auto"><canvas id="chartCuerpos" height="300" aria-label="Gráfico de barras por cuerpos" role="img"></canvas></div>
+        <div class="progress-bar-container" aria-label="Barra de progreso de ocupación de plazas por cuerpos">
+          <div class="progress-bar-header">
+            <p>A1</p>
+            <p>123/400 plazas</p>
+          </div>
+          <div class="progress-bar-body">
+            <progress value="70" max="100"></progress>
+          </div>
+
+          <div class="progress-bar-header">
+            <p>A1</p>
+            <p>123/400 plazas</p>
+          </div>
+          <div class="progress-bar-body">
+            <progress value="70" max="100"></progress>
+          </div>
+
+          <div class="progress-bar-header">
+            <p>A2</p>
+            <p>123/400 plazas</p>
+          </div>
+          <div class="progress-bar-body">
+            <progress value="70" max="100"></progress>
+          </div>
+
+          <div class="progress-bar-header">
+            <p>B</p>
+            <p>123/400 plazas</p>
+          </div>
+          <div class="progress-bar-body">
+            <progress value="70" max="100"></progress>
+          </div>
+
+          <div class="progress-bar-header">
+            <p>C1</p>
+            <p>123/400 plazas</p>
+          </div>
+          <div class="progress-bar-body">
+            <progress value="70" max="100"></progress>
+          </div>
+
+          <div class="progress-bar-header">
+            <p>C2</p>
+            <p>123/400 plazas</p>
+          </div>
+          <div class="progress-bar-body">
+            <progress value="70" max="100"></progress>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Gráfica -->
+      <section class="main-seciones" aria-labelledby="chart-title">
+        <h2 id="chart-title">🌇 Distribución por cuerpos de informática:</h2>
+        <div style="width:95%;margin:0 auto"><canvas id="chartCuerpos" height="180" aria-label="Gráfico de barras por cuerpos" role="img"></canvas></div>
       </section>
 
       <!-- <section aria-labelledby="chart-title">
@@ -223,41 +233,36 @@
 
 
       <!-- Donaciones -->
-      <section aria-labelledby="donacion">
-        <h2 id="donacion">🪙 Apoya el proyecto</h2>
+      <section class="main-seciones_2" aria-labelledby="donacion">
+        <h2 id="donacion">🪙 Patrocinadores y Donaciones</h2>
+        <p>
+            Si te gusta <strong>RPT.OVH</strong> y quieres apoyar su desarrollo y mantenimiento, considera hacer una donación o convertirte en patrocinador. 
+            Tu apoyo nos ayuda a mantener el sitio actualizado y a seguir mejorando la experiencia para todos los usuarios.
+        </p>
 
-        
-        <a
-          href="https://buymeacoffee.com/rubenleon"
-          role="button"
-          class="secondary"
-          target="_blank" rel="noopener"
-        >
-          ☕ Invítame a un café
-        </a>
-        <!-- <h3 style="margin-top:1rem;">Últimos comentarios</h3>
-        <div id="comments" class="comments" aria-live="polite" aria-atomic="true">
-          <em>Cargando comentarios...</em> -->
-        </div>
+        <p class="footer-contacto">
+          <a href="mailto:i9wc0c4pp@mozmail.com"><strong>Contacto: </strong>enviar correo a RPT.OVH</a>.
+        </p>
+
       </section>
     </main>
 
     <!-- Footer -->
      <footer>
-        <p class="date"><strong>Actualizado:</strong> 1 de Septiembre del 2025</p>
-        <p>
+        <p class="date"></p><strong>Actualizado: </strong><time datetime="2025-09-01" itemprop="dateModified">1 de Septiembre del 2025</time></p>  
+        <div class="footer-fuente-de-informacion">
             <strong>Fuente de información:</strong> 
             <a href="https://transparencia.gob.es/transparencia/transparencia_Home/index/PublicidadActiva/OrganizacionYEmpleo/Relaciones-Puestos-Trabajo.html" target="_blank">
            
-                <img class="img-transparencia" src="/LogoTransparencia_65.webp" alt="Logo del portal de tranparencia de la age" />
+                <img class="img-transparencia footer-portal" src="/LogoTransparencia_65.webp" alt="Logo del portal de tranparencia de la age" />
             </a>
-        </p>
+        </div>
         
-        <p>&copy; 2025 - rpt.ovh por Rubén León</p>
-        <div class="social-links">
-            <a href="https://buymeacoffee.com/rubenleon" name="enlace buymeacoffee.com" target="_blank">
+        
+        <div class="footer-social-links">
+            <a href="https://buymeacoffee.com/rubenleon" class="footer-coffee" name="enlace buymeacoffee.com" target="_blank">
                 
-                <svg width="32" height="32" viewBox="0 0 27 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="32" height="32" viewBox="0 0 27 39"  xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.3206 17.9122C12.9282 18.5083 11.3481 19.1842 9.30013 19.1842C8.44341 19.1824 7.59085 19.0649 6.76562 18.8347L8.18203 33.3768C8.23216 33.9847 8.50906 34.5514 8.95772 34.9645C9.40638 35.3776 9.994 35.6069 10.6039 35.6068C10.6039 35.6068 12.6122 35.7111 13.2823 35.7111C14.0036 35.7111 16.1662 35.6068 16.1662 35.6068C16.776 35.6068 17.3635 35.3774 17.8121 34.9643C18.2606 34.5512 18.5374 33.9846 18.5876 33.3768L20.1046 17.3073C19.4267 17.0757 18.7425 16.9219 17.9712 16.9219C16.6372 16.9214 15.5623 17.3808 14.3206 17.9122Z" fill="#FFDD00"></path>
                     <path d="M26.6584 10.3609L26.4451 9.28509C26.2537 8.31979 25.8193 7.40768 24.8285 7.05879C24.5109 6.94719 24.1505 6.89922 23.907 6.66819C23.6634 6.43716 23.5915 6.07837 23.5351 5.74565C23.4308 5.13497 23.3328 4.52377 23.2259 3.91413C23.1336 3.39002 23.0606 2.80125 22.8202 2.32042C22.5073 1.6748 21.858 1.29723 21.2124 1.04743C20.8815 0.923938 20.5439 0.819467 20.2012 0.734533C18.5882 0.308987 16.8922 0.152536 15.2328 0.0633591C13.241 -0.046547 11.244 -0.0134338 9.25692 0.162444C7.77794 0.296992 6.22021 0.459701 4.81476 0.971295C4.30108 1.15851 3.77175 1.38328 3.38115 1.78015C2.90189 2.26775 2.74544 3.02184 3.09537 3.62991C3.34412 4.06172 3.7655 4.3668 4.21242 4.56862C4.79457 4.82867 5.40253 5.02654 6.02621 5.15896C7.76282 5.54279 9.56148 5.6935 11.3356 5.75765C13.302 5.83701 15.2716 5.77269 17.2286 5.56521C17.7126 5.51202 18.1956 5.44822 18.6779 5.37382C19.2458 5.28673 19.6103 4.54411 19.4429 4.02678C19.2427 3.40828 18.7045 3.16839 18.0959 3.26173C18.0062 3.27581 17.917 3.28885 17.8273 3.30189L17.7626 3.31128C17.5565 3.33735 17.3503 3.36169 17.1441 3.38429C16.7182 3.43018 16.2913 3.46773 15.8633 3.49693C14.9048 3.56368 13.9437 3.59445 12.9831 3.59602C12.0391 3.59602 11.0947 3.56942 10.1529 3.50736C9.72314 3.4792 9.29447 3.44339 8.86684 3.39993C8.67232 3.37959 8.47832 3.35821 8.28432 3.33422L8.0997 3.31076L8.05955 3.30502L7.86816 3.27738C7.47703 3.21845 7.0859 3.15066 6.69895 3.06878C6.6599 3.06012 6.62498 3.03839 6.59994 3.0072C6.57491 2.976 6.56127 2.9372 6.56127 2.8972C6.56127 2.85721 6.57491 2.81841 6.59994 2.78721C6.62498 2.75602 6.6599 2.73429 6.69895 2.72563H6.70625C7.04158 2.65418 7.37951 2.59317 7.71849 2.53997C7.83148 2.52224 7.94482 2.50486 8.05851 2.48782H8.06164C8.27389 2.47374 8.48718 2.43567 8.69839 2.41064C10.536 2.2195 12.3845 2.15434 14.231 2.2156C15.1275 2.24168 16.0234 2.29435 16.9157 2.38509C17.1076 2.40491 17.2985 2.42577 17.4894 2.44923C17.5624 2.4581 17.6359 2.46853 17.7094 2.47739L17.8575 2.49878C18.2893 2.56309 18.7189 2.64115 19.1462 2.73293C19.7793 2.87061 20.5923 2.91546 20.8739 3.60906C20.9636 3.82913 21.0043 4.07371 21.0538 4.30474L21.1169 4.59939C21.1186 4.60467 21.1198 4.61008 21.1206 4.61555C21.2697 5.31089 21.4191 6.00623 21.5686 6.70157C21.5795 6.75293 21.5798 6.80601 21.5693 6.85748C21.5589 6.90895 21.5379 6.95771 21.5078 7.00072C21.4776 7.04373 21.4389 7.08007 21.3941 7.10747C21.3493 7.13487 21.2993 7.15274 21.2473 7.15997H21.2431L21.1519 7.17248L21.0617 7.18448C20.7759 7.22168 20.4897 7.25644 20.2033 7.28878C19.639 7.3531 19.0739 7.40872 18.5079 7.45566C17.3831 7.54918 16.2562 7.61055 15.127 7.63975C14.5516 7.65505 13.9763 7.66217 13.4013 7.66113C11.1124 7.65933 8.82553 7.5263 6.55188 7.2627C6.30574 7.2335 6.05959 7.20221 5.81344 7.1704C6.00431 7.19491 5.67472 7.15162 5.60797 7.14224C5.45152 7.12033 5.29506 7.09756 5.13861 7.07392C4.61346 6.99517 4.09144 6.89817 3.56733 6.81317C2.9337 6.70887 2.32771 6.76102 1.75458 7.07392C1.28413 7.33136 0.903361 7.72614 0.663078 8.20558C0.415886 8.71665 0.342354 9.2731 0.231796 9.82224C0.121237 10.3714 -0.0508594 10.9622 0.0143284 11.526C0.154613 12.7427 1.00518 13.7314 2.22863 13.9525C3.37959 14.1611 4.5368 14.3301 5.69714 14.474C10.2552 15.0323 14.8601 15.0991 19.4325 14.6733C19.8048 14.6385 20.1767 14.6006 20.548 14.5596C20.6639 14.5468 20.7813 14.5602 20.8914 14.5987C21.0016 14.6372 21.1017 14.6998 21.1845 14.782C21.2673 14.8642 21.3307 14.9639 21.37 15.0737C21.4093 15.1836 21.4235 15.3009 21.4116 15.4169L21.2958 16.5423C21.0625 18.8164 20.8292 21.0903 20.596 23.3641C20.3526 25.7519 20.1077 28.1395 19.8612 30.5269C19.7916 31.1993 19.7221 31.8715 19.6526 32.5436C19.5858 33.2054 19.5764 33.888 19.4507 34.542C19.2526 35.5704 18.5564 36.2019 17.5405 36.433C16.6098 36.6448 15.659 36.756 14.7045 36.7646C13.6464 36.7704 12.5888 36.7234 11.5307 36.7292C10.4011 36.7354 9.01755 36.6311 8.1456 35.7905C7.37951 35.052 7.27365 33.8958 7.16935 32.8961C7.03028 31.5725 6.89243 30.2491 6.75579 28.9259L5.98918 21.568L5.49324 16.8072C5.48489 16.7285 5.47655 16.6508 5.46873 16.5715C5.40927 16.0036 5.0072 15.4477 4.37357 15.4764C3.83121 15.5004 3.21479 15.9614 3.27841 16.5715L3.64607 20.1011L4.40642 27.4021C4.62302 29.4759 4.8391 31.5501 5.05465 33.6247C5.09637 34.022 5.13548 34.4205 5.17929 34.8179C5.41762 36.9894 7.07599 38.1596 9.12967 38.4892C10.3291 38.6822 11.5578 38.7218 12.775 38.7416C14.3353 38.7667 15.9113 38.8267 17.4461 38.544C19.7203 38.1268 21.4267 36.6082 21.6702 34.2526C21.7398 33.5725 21.8093 32.8923 21.8788 32.2119C22.11 29.9618 22.3409 27.7115 22.5714 25.4611L23.3255 18.1079L23.6713 14.7379C23.6885 14.5708 23.759 14.4137 23.8725 14.2898C23.986 14.1659 24.1363 14.0819 24.3012 14.0501C24.9515 13.9233 25.5732 13.7069 26.0357 13.212C26.7721 12.424 26.9187 11.3967 26.6584 10.3609ZM2.19525 11.0879C2.20516 11.0832 2.18691 11.1682 2.17909 11.2079C2.17752 11.1479 2.18065 11.0947 2.19525 11.0879ZM2.25836 11.5761C2.26357 11.5724 2.27921 11.5933 2.29538 11.6183C2.27087 11.5953 2.25523 11.5781 2.25783 11.5761H2.25836ZM2.32041 11.6579C2.34284 11.696 2.35483 11.72 2.32041 11.6579V11.6579ZM2.44505 11.7591H2.44818C2.44818 11.7627 2.45392 11.7664 2.456 11.7701C2.45255 11.766 2.4487 11.7624 2.44453 11.7591H2.44505ZM24.271 11.6079C24.0373 11.83 23.6853 11.9333 23.3375 11.9849C19.4366 12.5638 15.479 12.8569 11.5354 12.7275C8.71299 12.6311 5.92035 12.3176 3.12613 11.9229C2.85234 11.8843 2.55561 11.8342 2.36735 11.6324C2.01273 11.2517 2.18691 10.4851 2.27921 10.0251C2.3637 9.60373 2.52536 9.04207 3.02653 8.9821C3.80878 8.89031 4.71724 9.22042 5.49115 9.33776C6.4229 9.47996 7.35813 9.59382 8.29683 9.67935C12.303 10.0444 16.3765 9.98755 20.3649 9.45354C21.0919 9.35584 21.8163 9.24233 22.538 9.11299C23.181 8.99774 23.8939 8.78132 24.2825 9.44728C24.5489 9.90098 24.5844 10.508 24.5432 11.0207C24.5305 11.244 24.4329 11.4541 24.2705 11.6079H24.271Z" fill="#0D0C22"></path>
                   </svg>
@@ -270,9 +275,9 @@
                         fill="currentColor"
                         d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
                     ></path></svg>
-                    <span id="starts">14</span>
             </a>
         </div>
+        <p>&copy; 2025 RPT.OVH. por Rubén León</p>
     </footer>
 
     
