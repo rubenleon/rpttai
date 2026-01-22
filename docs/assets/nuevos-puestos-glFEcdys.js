@@ -1,4 +1,4 @@
-import{s as l}from"./githubStart-BWgQO704.js";/* empty css             */import{p as a}from"./buscador-BPsYvb9x.js";l();let d="",s=1;a.forEach(t=>{t[31].split(":")[0]=="NEW"&&(d+=`
+import{s as l}from"./githubStart-BWgQO704.js";/* empty css             */import{p as a}from"./buscador-HNizyDuB.js";l();let d="",s=1;a.forEach(t=>{t[31].split(":")[0]=="NEW"&&(d+=`
         <tr>
             <td class="td-text-small" scope="row">${s}</td>
             <td class="td-text-small">${t[30]}</td>

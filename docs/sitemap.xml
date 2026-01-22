@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rpt.ovh/</loc>
-    <lastmod>2025-09-01</lastmod> 
+    <lastmod>2026-01-01</lastmod> 
   </url>
   <url>
-    <loc>https://rpt.ovh/buscador.html</loc>
-    <lastmod>2025-09-01</lastmod> 
+    <loc>https://rpt.ovh/buscador</loc>
+    <lastmod>2026-01-01</lastmod> 
   </url>
   <url>
-    <loc>https://rpt.ovh/nuevos-puestos.html</loc>
-    <lastmod>2025-09-11</lastmod> 
+    <loc>https://rpt.ovh/nuevos-puestos</loc>
+    <lastmod>2026-01-01</lastmod> 
   </url>
 </urlset>
