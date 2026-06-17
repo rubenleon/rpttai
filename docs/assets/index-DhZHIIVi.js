@@ -1,4 +1,4 @@
-import{s as ao}from"./githubStart-BWgQO704.js";/* empty css             *//*!
+import{s as ao}from"./githubStart-CkZZkJhH.js";/* empty css             *//*!
  * @kurkle/color v0.3.4
  * https://github.com/kurkle/color#readme
  * (c) 2024 Jukka Kurkela

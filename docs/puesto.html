@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detalle de puesto - RPT.OVH</title>
+
+    <link type="shortcut icon" href="/logo.ico" />
+    <link rel="icon" type="image/webp" href="/logo.webp" />
+    <meta name="description" content="Ficha detallada de un puesto de la Relación de Puestos de Trabajo de informática en la Administración General del Estado." />
+    <meta name="author" content="@rubenleon" />
+    <meta name="robots" content="index, follow" />
+    <link rel="sitemap" type="application/xml" href="https://rpt.ovh/sitemap.xml" />
+
+    <meta property="og:url" content="https://rpt.ovh/puesto" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Detalle de puesto - RPT.OVH" />
+    <meta property="og:description" content="Consulta la ficha completa de un puesto de informática de la AGE." />
+    <meta property="og:image" content="https://rpt.ovh/rptovh_02.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="rpt.ovh" />
+    <meta property="twitter:url" content="https://rpt.ovh/puesto" />
+    <meta name="twitter:title" content="Detalle de puesto - RPT.OVH" />
+    <meta name="twitter:description" content="Consulta la ficha completa de un puesto de informática de la AGE." />
+    <meta name="twitter:image" content="https://rpt.ovh/rptovh_02.webp" />
+
+    <script defer src="https://cdn.overtracking.com/t/t83haGhqXRue17Bid/"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/assets/puesto-OGxTRKLM.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/githubStart-CkZZkJhH.js">
+    <link rel="modulepreload" crossorigin href="/assets/buscador-DcJjoCVd.js">
+    <link rel="modulepreload" crossorigin href="/assets/check-rpt-CSKtmCa-.js">
+    <link rel="stylesheet" crossorigin href="/assets/githubStart-BFPe1vN7.css">
+    <link rel="stylesheet" crossorigin href="/assets/buscador-DUGO4YkC.css">
+    <link rel="stylesheet" crossorigin href="/assets/main-eK67iRcD.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <div class="header-svg">
+          <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+          </svg>
+        </div>
+        <h1><a href="/">rpt.ovh</a></h1>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </label>
+      <nav class="header-nav" aria-label="Menú de navegación principal">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/buscador">Buscador</a></li>
+          <li><a href="/nuevos-puestos">Nuevos Puestos</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://github.com/rubenleon/rpttai" title="Repositorio de GitHub" target="_blank">
+          <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+          <span id="starts">14</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="main-titulo">
+        <h1>Detalle del puesto</h1>
+        <p>Ficha completa de la Relación de Puestos de Trabajo.</p>
+      </section>
+
+      <section id="puesto-detalle" class="puesto-detalle" aria-live="polite">
+        <p>Cargando puesto...</p>
+      </section>
+    </main>
+
+    <footer>
+      <p class="date"></p><strong>Actualizado: </strong><time datetime="2026-04-01" itemprop="dateModified">1 de Abril del 2026</time></p>
+      <div class="footer-fuente-de-informacion">
+        <strong>Fuente de información:</strong>
+        <a href="https://transparencia.gob.es/transparencia/transparencia_Home/index/PublicidadActiva/OrganizacionYEmpleo/Relaciones-Puestos-Trabajo.html" target="_blank">
+          <img class="img-transparencia footer-portal" src="/LogoTransparencia_65.webp" alt="Logo del portal de transparencia de la AGE" />
+        </a>
+      </div>
+
+      <div class="footer-social-links">
+        <a href="https://buymeacoffee.com/rubenleon" class="footer-coffee" name="enlace buymeacoffee.com" target="_blank" aria-label="Apoyar el proyecto en Buy Me a Coffee">
+          <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#ffdd00" d="M4 3h14a2 2 0 0 1 2 2v6a7 7 0 0 1-7 7H9a7 7 0 0 1-7-7V5a2 2 0 0 1 2-2Z"/>
+            <path fill="#3b2f2f" d="M6 6h10v5a4 4 0 0 1-4 4h-2a4 4 0 0 1-4-4V6Zm14 2h1a3 3 0 0 1 0 6h-1v-2h1a1 1 0 0 0 0-2h-1V8Z"/>
+            <path fill="#ffffff" d="M7 20h10a1 1 0 1 1 0 2H7a1 1 0 1 1 0-2Z"/>
+          </svg>
+        </a>
+
+        <a href="https://github.com/rubenleon/rpttai" title="enlace al repositorio de GitHub" target="_blank">
+          <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+        </a>
+      </div>
+      <p>&copy; 2026 RPT.OVH. por Rubén <span class="r">León</span></p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  </body>
+</html>
