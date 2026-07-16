@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      RPT de Informática en la Administración General del Estado en
-      2026
-    </title>
+    <title>Buscador de plazas de informática AGE e INAP | RPT.OVH</title>
 
     <link type="shortcut icon" href="/logo.ico" />
-    <link rel="icon" type="image/webp" href="/logo.webp" />
+    <link rel="icon" type="image/webp" href="/logo.ico" />
 
     <!-- Descripción SEO -->
     <meta
       name="description"
-      content="RPT.OVH organiza las plazas de informática en la Administración General del Estado, mostrando cuántas hay en cada provincia, de qué cuerpo son, si están vacantes y en qué ministerios se encuentran."
+      content="Busca plazas de informática de la Administración General del Estado (AGE), puestos TIC, vacantes y destinos para funcionario informático del Estado por provincia y cuerpo."
+    />
+    <meta
+      name="keywords"
+      content="buscador plazas informatica AGE, plazas informatica INAP, funcionario informatico estado, puestos TIC administracion general del estado, vacantes informatica AGE"
     />
 
     <!-- Autor -->
@@ -28,20 +29,20 @@
       href="https://rpt.ovh/sitemap.xml"
     />
     <meta name="robots" content="index, follow" />
-    <meta name="date" content="2026-04-01" scheme="YYYY-MM-DD" />
+    <meta name="date" content="2026-07-01" scheme="YYYY-MM-DD" />
 
     <!-- Open Graph -->
     <meta property="og:url" content="https://rpt.ovh/buscador" />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="RPT de Informática en la Administración General del Estado (AGE)"
+      content="Buscador de plazas de informática AGE e INAP"
     />
     <meta
       property="og:description"
-      content="RPT.OVH organiza las plazas de informática por provincia, cuerpo, vacante y ministerio para una consulta rápida y clara."
+      content="Filtra puestos TIC y plazas de informática de la AGE por provincia, cuerpo, vacante y ministerio."
     />
-    <meta property="og:image" content="https://rpt.ovh/rptovh_02.webp" />
+    <meta property="og:image" content="https://rpt.ovh/rptovh_new.png" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -49,13 +50,13 @@
     <meta property="twitter:url" content="https://rpt.ovh/buscador" />
     <meta
       name="twitter:title"
-      content="RPT de Informática en la Administración General del Estado (AGE)"
+      content="Buscador de plazas de informática AGE e INAP"
     />
     <meta
       name="twitter:description"
-      content="Consulta las plazas de informática por provincia, cuerpo, vacante y ministerio en RPT.OVH."
+      content="Consulta puestos TIC y vacantes de informática en la AGE por provincia, cuerpo y ministerio."
     />
-    <meta name="twitter:image" content="https://rpt.ovh/rptovh_02.webp" />
+    <meta name="twitter:image" content="https://rpt.ovh/rptovh_new.png" />
 
     <script
       defer
@@ -65,13 +66,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/assets/buscador-B7gYwEyb.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/githubStart-CkZZkJhH.js">
-    <link rel="modulepreload" crossorigin href="/assets/buscador-DcJjoCVd.js">
-    <link rel="modulepreload" crossorigin href="/assets/check-rpt-CSKtmCa-.js">
-    <link rel="modulepreload" crossorigin href="/assets/table-sort-JVNqLWVj.js">
-    <link rel="stylesheet" crossorigin href="/assets/githubStart-BFPe1vN7.css">
-    <link rel="stylesheet" crossorigin href="/assets/buscador-DUGO4YkC.css">
+    <script type="module" crossorigin src="/assets/buscador-1FMa8itN.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/githubStart-B6S0mawn.js">
+    <link rel="modulepreload" crossorigin href="/assets/check-rpt-TEPsPCvM.js">
+    <link rel="modulepreload" crossorigin href="/assets/table-sort-eicihVap.js">
+    <link rel="modulepreload" crossorigin href="/assets/preload-helper-PQJXhb1v.js">
+    <link rel="stylesheet" crossorigin href="/assets/githubStart-CQXD4G6H.css">
+    <link rel="stylesheet" crossorigin href="/assets/preload-helper-D2Xela8Q.css">
   </head>
 
   <!-- Banner de Cookies -->
@@ -118,20 +119,10 @@
     <header>
       <div class="header-logo">
         <div class="header-svg">
-          <svg
-            fill="none"
-            viewBox="0 0 48 48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              clip-rule="evenodd"
-              d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
-              fill="currentColor"
-              fill-rule="evenodd"
-            ></path>
-          </svg>
+          <a href="/" aria-label="Inicio">
+            <img src="/rptovh_new.png" alt="Logo rpt.ovh" />
+          </a>
         </div>
-        <h1><a href="/">rpt.ovh</a></h1>
       </div>
 
       <!-- Checkbox oculto para controlar el menú -->
@@ -152,7 +143,7 @@
         <ul>
           <li><a href="/">Inicio</a></li>
           <li><a href="/buscador">Buscador</a></li>
-          <li><a href="/nuevos-puestos">Nuevos Puestos</a></li>
+          <li><a href="/nuevos-puestos">Nuevos puestos</a></li>
         </ul>
       </nav>
 
@@ -189,6 +180,16 @@
     </header>
 
     <main>
+      <section class="main-titulo">
+        <h1>Buscador de plazas de informática de la AGE</h1>
+        <p>
+          Filtra puestos TIC de la Administración General del Estado por
+          provincia, cuerpo, vacante y ministerio. Pensado para funcionarios
+          informáticos del Estado y personas que consultan destinos relacionados
+          con la AGE o el INAP.
+        </p>
+      </section>
+
       <div id="filtro"></div>
 
       <div id="form-contenedor">
@@ -303,7 +304,7 @@
 
     <!-- Footer -->
     <footer>
-      <p class="date"><strong>Actualizado:</strong> 1 de Abril del 2026</p>
+      <p class="date"><strong>Actualizado:</strong> 1 de Julio del 2026</p>
       <div class="footer-fuente-de-informacion">
         <strong>Fuente de información:</strong>
         <a href="https://transparencia.gob.es/transparencia/transparencia_Home/index/PublicidadActiva/OrganizacionYEmpleo/Relaciones-Puestos-Trabajo.html" target="_blank">
