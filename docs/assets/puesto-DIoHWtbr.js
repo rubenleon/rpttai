@@ -22,7 +22,7 @@ import{t as e}from"./githubStart-B6S0mawn.js";/* empty css             */import{
                 <p>Usa una URL con el formato <code>/puesto?puesto=IDPUESTO</code>.</p>
                 <a class="puesto-accion" href="/buscador">Ir al buscador</a>
             </article>
-        `;return}let{puestos:e}=await n(async()=>{let{puestos:e}=await import(`./rpt-DbP2nxAx.js`);return{puestos:e}},[]),t=e.find(e=>String(e[11]).trim()===u);if(!t){v();return}let r=`${t[11]} - ${t[13]}`,s=h(t),l=document.createElement(`link`);l.rel=`canonical`,l.href=`${window.location.origin}/puesto?puesto=${encodeURIComponent(u)}`,document.head.append(l),b(t,l.href),d.innerHTML=`
+        `;return}let{puestos:e}=await n(async()=>{let{puestos:e}=await import(`./rpt-Comny1fQ.js`);return{puestos:e}},[]),t=e.find(e=>String(e[11]).trim()===u);if(!t){v();return}let r=`${t[11]} - ${t[13]}`,s=h(t),l=document.createElement(`link`);l.rel=`canonical`,l.href=`${window.location.origin}/puesto?puesto=${encodeURIComponent(u)}`,document.head.append(l),b(t,l.href),d.innerHTML=`
         <article class="puesto-hero">
             <div class="puesto-acciones" aria-label="Acciones del puesto">
                 <a class="puesto-boton puesto-boton-secundario" href="/buscador">${i} Volver al buscador</a>
