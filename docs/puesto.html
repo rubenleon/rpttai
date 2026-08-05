@@ -30,20 +30,20 @@
     <script defer src="https://cdn.overtracking.com/t/t83haGhqXRue17Bid/"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/assets/puesto-DIoHWtbr.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/githubStart-B6S0mawn.js">
+    <script type="module" crossorigin src="/assets/puesto-DKWn9JOn.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/githubStart-u1emfE8W.js">
     <link rel="modulepreload" crossorigin href="/assets/check-rpt-TEPsPCvM.js">
-    <link rel="modulepreload" crossorigin href="/assets/preload-helper-PQJXhb1v.js">
-    <link rel="stylesheet" crossorigin href="/assets/githubStart-CQXD4G6H.css">
-    <link rel="stylesheet" crossorigin href="/assets/preload-helper-D2Xela8Q.css">
-    <link rel="stylesheet" crossorigin href="/assets/main-D87YECfd.css">
+    <link rel="modulepreload" crossorigin href="/assets/preload-helper-Czpn1I53.js">
+    <link rel="stylesheet" crossorigin href="/assets/githubStart-DG_QNZb8.css">
+    <link rel="stylesheet" crossorigin href="/assets/main-BGoUR3rj.css">
+    <link rel="stylesheet" crossorigin href="/assets/buscador-C1S-gtai.css">
   </head>
   <body>
     <header>
       <div class="header-logo">
         <div class="header-svg">
           <a href="/" aria-label="Inicio">
-            <img src="/rptovh_new.png" alt="Logo rpt.ovh" />
+            <span class="header-text-logo"><strong class="logo-rpt">RPT</strong><span class="logo-dot">.</span><strong class="logo-ovh">OVH</strong></span>
           </a>
         </div>
       </div>
@@ -57,8 +57,9 @@
       <nav class="header-nav" aria-label="Menú de navegación principal">
         <ul>
           <li><a href="/">Inicio</a></li>
+          <li><a href="/provincias">Provincias</a></li>
           <li><a href="/buscador">Buscador</a></li>
-          <li><a href="/nuevos-puestos">Nuevos puestos</a></li>
+          <li><a href="/nuevos-puestos">Nuevas plazas</a></li>
         </ul>
       </nav>
 
@@ -77,6 +78,18 @@
         <h1>Detalle del puesto TIC de informática en la AGE</h1>
         <p>Ficha completa de la Relación de Puestos de Trabajo para consultar destinos de funcionario informático del Estado.</p>
       </section>
+
+      <noscript>
+        <div class="aviso-noscript">
+          <p>
+            La ficha completa del puesto se genera con JavaScript a partir del
+            identificador en la dirección, por ejemplo
+            <code>/puesto?puesto=</code>. El puesto pertenece a la Relación de
+            Puestos de Trabajo (RPT) de la AGE para consultar destinos de
+            funcionario informático del Estado.
+          </p>
+        </div>
+      </noscript>
 
       <section id="puesto-detalle" class="puesto-detalle" aria-live="polite">
         <p>Cargando puesto...</p>

@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Distribución de plazas TIC por provincia | RPT.OVH</title>
+
+    <link type="shortcut icon" href="/logo.ico" />
+    <link rel="icon" type="image/webp" href="/logo.ico" />
+
+    <!-- Descripción SEO -->
+    <meta
+      name="description"
+      content="Consulta el número de puestos TIC de informática de la AGE por provincia: totales, vacantes y no vacantes. Mapa interactivo de plazas de informática por provincia."
+    />
+    <meta
+      name="keywords"
+      content="plazas informatica por provincia AGE, puestos TIC por provincia, vacantes informatica por provincia, mapa plazas informatica AGE, RPT informatica por provincia"
+    />
+
+    <!-- Autor -->
+    <meta name="author" content="@rubenleon" />
+
+    <!-- Canonical / sitemap -->
+    <link rel="canonical" href="https://rpt.ovh/provincias" />
+    <link
+      rel="sitemap"
+      type="application/xml"
+      href="https://rpt.ovh/sitemap.xml"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:url" content="https://rpt.ovh/provincias" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Puestos TIC por provincia en la AGE"
+    />
+    <meta
+      property="og:description"
+      content="Totales, vacantes y no vacantes de plazas de informática de la AGE en cada provincia, con mapa interactivo."
+    />
+    <meta property="og:image" content="https://rpt.ovh/rptovh_new.png" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="rpt.ovh" />
+    <meta property="twitter:url" content="https://rpt.ovh/provincias" />
+    <meta
+      name="twitter:title"
+      content="Puestos TIC por provincia en la AGE"
+    />
+    <meta
+      name="twitter:description"
+      content="Consulta el número de puestos TIC de informática de la AGE por provincia y vacantes."
+    />
+    <meta name="twitter:image" content="https://rpt.ovh/rptovh_new.png" />
+
+    <script
+      defer
+      src="https://cdn.overtracking.com/t/t83haGhqXRue17Bid/"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/provincias-_PFpz6tr.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/githubStart-u1emfE8W.js">
+    <link rel="modulepreload" crossorigin href="/assets/estadisticas-C647LRvQ.js">
+    <link rel="modulepreload" crossorigin href="/assets/table-sort-eicihVap.js">
+    <link rel="stylesheet" crossorigin href="/assets/githubStart-DG_QNZb8.css">
+    <link rel="stylesheet" crossorigin href="/assets/main-BGoUR3rj.css">
+    <link rel="stylesheet" crossorigin href="/assets/buscador-C1S-gtai.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="header-logo">
+        <div class="header-svg">
+          <a href="/" aria-label="Inicio">
+            <span class="header-text-logo"><strong class="logo-rpt">RPT</strong><span class="logo-dot">.</span><strong class="logo-ovh">OVH</strong></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Checkbox oculto para controlar el menú -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+      <!-- Botón hamburguesa -->
+      <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M3 6h18M3 12h18M3 18h18"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </label>
+      <nav class="header-nav" aria-label="Menú de navegación principal">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/provincias">Provincias</a></li>
+          <li><a href="/buscador">Buscador</a></li>
+          <li><a href="/nuevos-puestos">Nuevas plazas</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-social-links">
+        <a
+          href="https://github.com/rubenleon/rpttai"
+          title="Repositorio de GitHub"
+          target="_blank"
+        >
+          <svg
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+            width="32"
+            height="32"
+            astro-icon="social/github"
+          >
+            <path
+              fill="currentColor"
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+            ></path>
+          </svg>
+          <span id="starts">14</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="container nuevos-puestos-page">
+      <noscript>
+        <div class="aviso-noscript">
+          <p>
+            La tabla con los puestos TIC por provincia está disponible sin
+            JavaScript. El mapa interactivo necesita JavaScript para cargarse.
+          </p>
+        </div>
+      </noscript>
+      <section
+        class="main-seciones nuevos-puestos-section"
+        aria-labelledby="provincias-age"
+      >
+        <div class="nuevos-puestos-hero">
+          <span class="nuevos-puestos-kicker">RPT 1 de Julio del 2026</span>
+          <h1 id="provincias-age">Puestos TIC de la AGE por provincia</h1>
+          <p>
+            Resumen de plazas de informática de la Administración General del
+            Estado en cada provincia: totales, vacantes y no vacantes. Útil para
+            conocer los destinos con más puestos para funcionario informático
+            del Estado.
+          </p>
+          <div class="nuevos-puestos-ayuda" aria-label="Ayudas de uso de la página">
+            <span>Tabla ordenable</span>
+            <span>Mapa interactivo</span>
+            <span>Totales por provincia</span>
+          </div>
+        </div>
+
+        <div id="resumen-totales" class="resumen-totales" aria-label="Totales de puestos"><div class="resumen-tarjeta">
+            <span class="resumen-valor">12.105</span>
+            <span class="resumen-etiqueta">Puestos totales</span>
+          </div>
+          <div class="resumen-tarjeta resumen-tarjeta-vacantes">
+            <span class="resumen-valor">3743</span>
+            <span class="resumen-etiqueta">Vacantes</span>
+          </div>
+          <div class="resumen-tarjeta">
+            <span class="resumen-valor">8362</span>
+            <span class="resumen-etiqueta">No vacantes</span>
+          </div>
+          <div class="resumen-tarjeta">
+            <span class="resumen-valor">52</span>
+            <span class="resumen-etiqueta">Provincias</span>
+          </div></div>
+
+        <div class="overflow-auto">
+          <div class="tablaMinisterios-container">
+            <table class="tablaMinisterios provincias-tabla" aria-describedby="tabla-provincias">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Provincia</th>
+                  <th scope="col">Totales</th>
+                  <th scope="col">Vacantes</th>
+                  <th scope="col">No vacantes</th>
+                  <th scope="col">% Vacantes</th>
+                </tr>
+              </thead>
+              <tbody id="datosProvincias"><tr>
+              <td class="td-text-small">1</td>
+              <td class="td-text-large">Madrid</td>
+              <td class="td-text-medio resumen-fila-total">9180</td>
+              <td class="td-text-medio resumen-fila-vacantes">3124</td>
+              <td class="td-text-medio">6056</td>
+              <td class="td-text-small">34,0%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">2</td>
+              <td class="td-text-large">Barcelona</td>
+              <td class="td-text-medio resumen-fila-total">175</td>
+              <td class="td-text-medio resumen-fila-vacantes">43</td>
+              <td class="td-text-medio">132</td>
+              <td class="td-text-small">24,6%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">3</td>
+              <td class="td-text-large">Valencia</td>
+              <td class="td-text-medio resumen-fila-total">158</td>
+              <td class="td-text-medio resumen-fila-vacantes">35</td>
+              <td class="td-text-medio">123</td>
+              <td class="td-text-small">22,2%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">4</td>
+              <td class="td-text-large">Murcia</td>
+              <td class="td-text-medio resumen-fila-total">120</td>
+              <td class="td-text-medio resumen-fila-vacantes">30</td>
+              <td class="td-text-medio">90</td>
+              <td class="td-text-small">25,0%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">5</td>
+              <td class="td-text-large">Sevilla</td>
+              <td class="td-text-medio resumen-fila-total">120</td>
+              <td class="td-text-medio resumen-fila-vacantes">15</td>
+              <td class="td-text-medio">105</td>
+              <td class="td-text-small">12,5%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">6</td>
+              <td class="td-text-large">Zaragoza</td>
+              <td class="td-text-medio resumen-fila-total">100</td>
+              <td class="td-text-medio resumen-fila-vacantes">28</td>
+              <td class="td-text-medio">72</td>
+              <td class="td-text-small">28,0%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">7</td>
+              <td class="td-text-large">Asturias</td>
+              <td class="td-text-medio resumen-fila-total">98</td>
+              <td class="td-text-medio resumen-fila-vacantes">26</td>
+              <td class="td-text-medio">72</td>
+              <td class="td-text-small">26,5%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">8</td>
+              <td class="td-text-large">Valladolid</td>
+              <td class="td-text-medio resumen-fila-total">91</td>
+              <td class="td-text-medio resumen-fila-vacantes">19</td>
+              <td class="td-text-medio">72</td>
+              <td class="td-text-small">20,9%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">9</td>
+              <td class="td-text-large">Illes Balears</td>
+              <td class="td-text-medio resumen-fila-total">90</td>
+              <td class="td-text-medio resumen-fila-vacantes">32</td>
+              <td class="td-text-medio">58</td>
+              <td class="td-text-small">35,6%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">10</td>
+              <td class="td-text-large">A Coruña</td>
+              <td class="td-text-medio resumen-fila-total">88</td>
+              <td class="td-text-medio resumen-fila-vacantes">19</td>
+              <td class="td-text-medio">69</td>
+              <td class="td-text-small">21,6%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">11</td>
+              <td class="td-text-large">Alicante</td>
+              <td class="td-text-medio resumen-fila-total">88</td>
+              <td class="td-text-medio resumen-fila-vacantes">15</td>
+              <td class="td-text-medio">73</td>
+              <td class="td-text-small">17,0%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">12</td>
+              <td class="td-text-large">Málaga</td>
+              <td class="td-text-medio resumen-fila-total">88</td>
+              <td class="td-text-medio resumen-fila-vacantes">9</td>
+              <td class="td-text-medio">79</td>
+              <td class="td-text-small">10,2%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">13</td>
+              <td class="td-text-large">Cádiz</td>
+              <td class="td-text-medio resumen-fila-total">79</td>
+              <td class="td-text-medio resumen-fila-vacantes">11</td>
+              <td class="td-text-medio">68</td>
+              <td class="td-text-small">13,9%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">14</td>
+              <td class="td-text-large">Pontevedra</td>
+              <td class="td-text-medio resumen-fila-total">72</td>
+              <td class="td-text-medio resumen-fila-vacantes">9</td>
+              <td class="td-text-medio">63</td>
+              <td class="td-text-small">12,5%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">15</td>
+              <td class="td-text-large">Las Palmas</td>
+              <td class="td-text-medio resumen-fila-total">70</td>
+              <td class="td-text-medio resumen-fila-vacantes">16</td>
+              <td class="td-text-medio">54</td>
+              <td class="td-text-small">22,9%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">16</td>
+              <td class="td-text-large">Granada</td>
+              <td class="td-text-medio resumen-fila-total">68</td>
+              <td class="td-text-medio resumen-fila-vacantes">12</td>
+              <td class="td-text-medio">56</td>
+              <td class="td-text-small">17,6%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">17</td>
+              <td class="td-text-large">Badajoz</td>
+              <td class="td-text-medio resumen-fila-total">63</td>
+              <td class="td-text-medio resumen-fila-vacantes">12</td>
+              <td class="td-text-medio">51</td>
+              <td class="td-text-small">19,0%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">18</td>
+              <td class="td-text-large">Bizkaia</td>
+              <td class="td-text-medio resumen-fila-total">62</td>
+              <td class="td-text-medio resumen-fila-vacantes">18</td>
+              <td class="td-text-medio">44</td>
+              <td class="td-text-small">29,0%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">19</td>
+              <td class="td-text-large">Toledo</td>
+              <td class="td-text-medio resumen-fila-total">62</td>
+              <td class="td-text-medio resumen-fila-vacantes">15</td>
+              <td class="td-text-medio">47</td>
+              <td class="td-text-small">24,2%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">20</td>
+              <td class="td-text-large">Santa Cruz de Tenerife</td>
+              <td class="td-text-medio resumen-fila-total">60</td>
+              <td class="td-text-medio resumen-fila-vacantes">11</td>
+              <td class="td-text-medio">49</td>
+              <td class="td-text-small">18,3%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">21</td>
+              <td class="td-text-large">Albacete</td>
+              <td class="td-text-medio resumen-fila-total">48</td>
+              <td class="td-text-medio resumen-fila-vacantes">8</td>
+              <td class="td-text-medio">40</td>
+              <td class="td-text-small">16,7%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">22</td>
+              <td class="td-text-large">Córdoba</td>
+              <td class="td-text-medio resumen-fila-total">47</td>
+              <td class="td-text-medio resumen-fila-vacantes">9</td>
+              <td class="td-text-medio">38</td>
+              <td class="td-text-small">19,1%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">23</td>
+              <td class="td-text-large">Cantabria</td>
+              <td class="td-text-medio resumen-fila-total">46</td>
+              <td class="td-text-medio resumen-fila-vacantes">8</td>
+              <td class="td-text-medio">38</td>
+              <td class="td-text-small">17,4%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">24</td>
+              <td class="td-text-large">Burgos</td>
+              <td class="td-text-medio resumen-fila-total">45</td>
+              <td class="td-text-medio resumen-fila-vacantes">11</td>
+              <td class="td-text-medio">34</td>
+              <td class="td-text-small">24,4%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">25</td>
+              <td class="td-text-large">Castellón</td>
+              <td class="td-text-medio resumen-fila-total">45</td>
+              <td class="td-text-medio resumen-fila-vacantes">11</td>
+              <td class="td-text-medio">34</td>
+              <td class="td-text-small">24,4%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">26</td>
+              <td class="td-text-large">León</td>
+              <td class="td-text-medio resumen-fila-total">45</td>
+              <td class="td-text-medio resumen-fila-vacantes">12</td>
+              <td class="td-text-medio">33</td>
+              <td class="td-text-small">26,7%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">27</td>
+              <td class="td-text-large">Tarragona</td>
+              <td class="td-text-medio resumen-fila-total">44</td>
+              <td class="td-text-medio resumen-fila-vacantes">12</td>
+              <td class="td-text-medio">32</td>
+              <td class="td-text-small">27,3%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">28</td>
+              <td class="td-text-large">Jaén</td>
+              <td class="td-text-medio resumen-fila-total">43</td>
+              <td class="td-text-medio resumen-fila-vacantes">6</td>
+              <td class="td-text-medio">37</td>
+              <td class="td-text-small">14,0%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">29</td>
+              <td class="td-text-large">Navarra</td>
+              <td class="td-text-medio resumen-fila-total">43</td>
+              <td class="td-text-medio resumen-fila-vacantes">18</td>
+              <td class="td-text-medio">25</td>
+              <td class="td-text-small">41,9%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">30</td>
+              <td class="td-text-large">Almería</td>
+              <td class="td-text-medio resumen-fila-total">41</td>
+              <td class="td-text-medio resumen-fila-vacantes">5</td>
+              <td class="td-text-medio">36</td>
+              <td class="td-text-small">12,2%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">31</td>
+              <td class="td-text-large">Álava</td>
+              <td class="td-text-medio resumen-fila-total">41</td>
+              <td class="td-text-medio resumen-fila-vacantes">17</td>
+              <td class="td-text-medio">24</td>
+              <td class="td-text-small">41,5%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">32</td>
+              <td class="td-text-large">Ciudad Real</td>
+              <td class="td-text-medio resumen-fila-total">41</td>
+              <td class="td-text-medio resumen-fila-vacantes">5</td>
+              <td class="td-text-medio">36</td>
+              <td class="td-text-small">12,2%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">33</td>
+              <td class="td-text-large">Girona</td>
+              <td class="td-text-medio resumen-fila-total">41</td>
+              <td class="td-text-medio resumen-fila-vacantes">13</td>
+              <td class="td-text-medio">28</td>
+              <td class="td-text-small">31,7%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">34</td>
+              <td class="td-text-large">Salamanca</td>
+              <td class="td-text-medio resumen-fila-total">40</td>
+              <td class="td-text-medio resumen-fila-vacantes">6</td>
+              <td class="td-text-medio">34</td>
+              <td class="td-text-small">15,0%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">35</td>
+              <td class="td-text-large">Cáceres</td>
+              <td class="td-text-medio resumen-fila-total">39</td>
+              <td class="td-text-medio resumen-fila-vacantes">7</td>
+              <td class="td-text-medio">32</td>
+              <td class="td-text-small">17,9%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">36</td>
+              <td class="td-text-large">Gipuzkoa</td>
+              <td class="td-text-medio resumen-fila-total">38</td>
+              <td class="td-text-medio resumen-fila-vacantes">17</td>
+              <td class="td-text-medio">21</td>
+              <td class="td-text-small">44,7%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">37</td>
+              <td class="td-text-large">Lleida</td>
+              <td class="td-text-medio resumen-fila-total">38</td>
+              <td class="td-text-medio resumen-fila-vacantes">7</td>
+              <td class="td-text-medio">31</td>
+              <td class="td-text-small">18,4%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">38</td>
+              <td class="td-text-large">Ourense</td>
+              <td class="td-text-medio resumen-fila-total">38</td>
+              <td class="td-text-medio resumen-fila-vacantes">4</td>
+              <td class="td-text-medio">34</td>
+              <td class="td-text-small">10,5%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">39</td>
+              <td class="td-text-large">La Rioja</td>
+              <td class="td-text-medio resumen-fila-total">36</td>
+              <td class="td-text-medio resumen-fila-vacantes">10</td>
+              <td class="td-text-medio">26</td>
+              <td class="td-text-small">27,8%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">40</td>
+              <td class="td-text-large">Lugo</td>
+              <td class="td-text-medio resumen-fila-total">36</td>
+              <td class="td-text-medio resumen-fila-vacantes">5</td>
+              <td class="td-text-medio">31</td>
+              <td class="td-text-small">13,9%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">41</td>
+              <td class="td-text-large">Huelva</td>
+              <td class="td-text-medio resumen-fila-total">35</td>
+              <td class="td-text-medio resumen-fila-vacantes">4</td>
+              <td class="td-text-medio">31</td>
+              <td class="td-text-small">11,4%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">42</td>
+              <td class="td-text-large">Cuenca</td>
+              <td class="td-text-medio resumen-fila-total">31</td>
+              <td class="td-text-medio resumen-fila-vacantes">7</td>
+              <td class="td-text-medio">24</td>
+              <td class="td-text-small">22,6%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">43</td>
+              <td class="td-text-large">Segovia</td>
+              <td class="td-text-medio resumen-fila-total">31</td>
+              <td class="td-text-medio resumen-fila-vacantes">4</td>
+              <td class="td-text-medio">27</td>
+              <td class="td-text-small">12,9%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">44</td>
+              <td class="td-text-large">Zamora</td>
+              <td class="td-text-medio resumen-fila-total">31</td>
+              <td class="td-text-medio resumen-fila-vacantes">5</td>
+              <td class="td-text-medio">26</td>
+              <td class="td-text-small">16,1%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">45</td>
+              <td class="td-text-large">Palencia</td>
+              <td class="td-text-medio resumen-fila-total">30</td>
+              <td class="td-text-medio resumen-fila-vacantes">7</td>
+              <td class="td-text-medio">23</td>
+              <td class="td-text-small">23,3%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">46</td>
+              <td class="td-text-large">Soria</td>
+              <td class="td-text-medio resumen-fila-total">29</td>
+              <td class="td-text-medio resumen-fila-vacantes">6</td>
+              <td class="td-text-medio">23</td>
+              <td class="td-text-small">20,7%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">47</td>
+              <td class="td-text-large">Huesca</td>
+              <td class="td-text-medio resumen-fila-total">27</td>
+              <td class="td-text-medio resumen-fila-vacantes">5</td>
+              <td class="td-text-medio">22</td>
+              <td class="td-text-small">18,5%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">48</td>
+              <td class="td-text-large">Ceuta</td>
+              <td class="td-text-medio resumen-fila-total">26</td>
+              <td class="td-text-medio resumen-fila-vacantes">5</td>
+              <td class="td-text-medio">21</td>
+              <td class="td-text-small">19,2%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">49</td>
+              <td class="td-text-large">Ávila</td>
+              <td class="td-text-medio resumen-fila-total">25</td>
+              <td class="td-text-medio resumen-fila-vacantes">3</td>
+              <td class="td-text-medio">22</td>
+              <td class="td-text-small">12,0%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">50</td>
+              <td class="td-text-large">Guadalajara</td>
+              <td class="td-text-medio resumen-fila-total">25</td>
+              <td class="td-text-medio resumen-fila-vacantes">4</td>
+              <td class="td-text-medio">21</td>
+              <td class="td-text-small">16,0%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">51</td>
+              <td class="td-text-large">Teruel</td>
+              <td class="td-text-medio resumen-fila-total">25</td>
+              <td class="td-text-medio resumen-fila-vacantes">1</td>
+              <td class="td-text-medio">24</td>
+              <td class="td-text-small">4,0%</td>
+            </tr>
+          
+            <tr>
+              <td class="td-text-small">52</td>
+              <td class="td-text-large">Melilla</td>
+              <td class="td-text-medio resumen-fila-total">23</td>
+              <td class="td-text-medio resumen-fila-vacantes">2</td>
+              <td class="td-text-medio">21</td>
+              <td class="td-text-small">8,7%</td>
+            </tr></tbody>
+            </table>
+          </div>
+        </div>
+
+        <h2 class="provincias-mapa-titulo">Mapa de puestos TIC por provincia</h2>
+        <div class="provincias-mapa-info">
+          El tamaño del marcador indica el número total de puestos TIC. Haz clic
+          en un marcador para ver el detalle.
+        </div>
+        <div id="mapaProvincias" class="provincias-mapa"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p class="date"></p><strong>Actualizado: </strong><time datetime="2026-07-01" itemprop="dateModified">1 de Julio del 2026</time></p>
+      <div class="footer-fuente-de-informacion">
+        <strong>Fuente de información:</strong>
+        <a href="https://transparencia.gob.es/transparencia/transparencia_Home/index/PublicidadActiva/OrganizacionYEmpleo/Relaciones-Puestos-Trabajo.html" target="_blank">
+          <img
+            class="img-transparencia footer-portal"
+            src="/LogoTransparencia_65.webp"
+            alt="Logo del portal de transparencia de la AGE"
+          />
+        </a>
+      </div>
+
+      <div class="footer-social-links">
+        <a
+          href="https://buymeacoffee.com/rubenleon"
+          class="footer-coffee"
+          name="enlace buymeacoffee.com"
+          target="_blank"
+          aria-label="Apoyar el proyecto en Buy Me a Coffee"
+        >
+          <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#ffdd00" d="M4 3h14a2 2 0 0 1 2 2v6a7 7 0 0 1-7 7H9a7 7 0 0 1-7-7V5a2 2 0 0 1 2-2Z"/>
+            <path fill="#3b2f2f" d="M6 6h10v5a4 4 0 0 1-4 4h-2a4 4 0 0 1-4-4V6Zm14 2h1a3 3 0 0 1 0 6h-1v-2h1a1 1 0 0 0 0-2h-1V8Z"/>
+            <path fill="#ffffff" d="M7 20h10a1 1 0 1 1 0 2H7a1 1 0 1 1 0-2Z"/>
+          </svg>
+        </a>
+
+        <a
+          href="https://github.com/rubenleon/rpttai"
+          title="enlace al repositorio de GitHub"
+          target="_blank"
+        >
+          <svg
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+            width="32"
+            height="32"
+            astro-icon="social/github"
+          >
+            <path
+              fill="currentColor"
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <p>&copy; 2026 RPT.OVH. por Rubén <span class="r">León</span></p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  </body>
+</html>

@@ -21,7 +21,6 @@
     <link rel="canonical" href="https://rpt.ovh/">
     <link rel="sitemap" type="application/xml" href="https://rpt.ovh/sitemap.xml">
     <meta name="robots" content="index, follow">
-    <meta name="date" content="2026-07-01" scheme="YYYY-MM-DD">
 
     <!-- Open Graph -->
     <meta property="og:url" content="https://rpt.ovh/" />
@@ -50,7 +49,7 @@
         "inLanguage": "es",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://rpt.ovh/buscador",
+          "target": "https://rpt.ovh/buscador?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       }
@@ -60,17 +59,18 @@
    
 
 
-    <script type="module" crossorigin src="/assets/index-DMB8vuic.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/githubStart-B6S0mawn.js">
-    <link rel="stylesheet" crossorigin href="/assets/githubStart-CQXD4G6H.css">
-    <link rel="stylesheet" crossorigin href="/assets/main-D87YECfd.css">
+    <script type="module" crossorigin src="/assets/index-Bf7BT3nu.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/githubStart-u1emfE8W.js">
+    <link rel="modulepreload" crossorigin href="/assets/estadisticas-C647LRvQ.js">
+    <link rel="stylesheet" crossorigin href="/assets/githubStart-DG_QNZb8.css">
+    <link rel="stylesheet" crossorigin href="/assets/main-BGoUR3rj.css">
   </head>
   <body>
     <header>
       <div class="header-logo">
         <div class="header-svg">
           <a href="/" aria-label="Inicio">
-            <img src="/rptovh_new.png" alt="Logo rpt.ovh" />
+            <span class="header-text-logo"><strong class="logo-rpt">RPT</strong><span class="logo-dot">.</span><strong class="logo-ovh">OVH</strong></span>
           </a>
         </div>
       </div>
@@ -92,8 +92,9 @@
       <nav class="header-nav" aria-label="Menú de navegación principal">
         <ul>
           <li><a href="/">Inicio</a></li>
+          <li><a href="/provincias">Provincias</a></li>
           <li><a href="/buscador">Buscador</a></li>
-          <li><a href="/nuevos-puestos">Nuevos puestos</a></li>
+          <li><a href="/nuevos-puestos">Nuevas plazas</a></li>
         </ul>
       </nav>
 
@@ -154,6 +155,13 @@
             </svg>
             Filtrar plazas
           </a>
+          <a href="/provincias" role="button" class="provincias-plazas" aria-label="Ver puestos TIC por provincia en un mapa">
+            <svg class="button-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2" />
+            </svg>
+            Provincias
+          </a>
           <a href="/nuevos-puestos" role="button" class="nuevas-plazas" aria-label="Nuevas plazas de la última RPT">
             <svg class="button-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M4 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -165,6 +173,15 @@
             Nuevos Puestos
           </a>
         </div>
+      </section>
+
+      <section class="main-seciones cuerpos-ranking" aria-labelledby="totales-title">
+        <div class="cuerpos-ranking-header">
+          <h2 id="totales-title">Totales de la RPT</h2>
+          <p>Plazas de la Administración General del Estado, puestos TIC y nuevos puestos TIC de la última RPT.</p>
+        </div>
+
+        <div id="totalesRPT" class="totales-rpt-list" aria-label="Totales de plazas y puestos TIC"></div>
       </section>
 
       <section class="main-seciones cuerpos-ranking" aria-labelledby="cuerpos-title">
