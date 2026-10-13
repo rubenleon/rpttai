@@ -1,277 +1,402 @@
 export const resumenProvincias = {
   "A CORUÑA": {
     "vacantes": 19,
-    "noVacantes": 69,
-    "totales": 88
+    "noVacantes": 91,
+    "otros": 0,
+    "totales": 110
   },
   "ALBACETE": {
-    "vacantes": 8,
-    "noVacantes": 40,
-    "totales": 48
+    "vacantes": 6,
+    "noVacantes": 44,
+    "otros": 0,
+    "totales": 50
   },
   "ALICANTE - ALACANT": {
-    "vacantes": 15,
-    "noVacantes": 73,
-    "totales": 88
+    "vacantes": 14,
+    "noVacantes": 83,
+    "otros": 0,
+    "totales": 97
   },
   "ALMERIA": {
-    "vacantes": 5,
-    "noVacantes": 36,
+    "vacantes": 7,
+    "noVacantes": 34,
+    "otros": 0,
     "totales": 41
   },
   "ARABA/ALAVA": {
-    "vacantes": 17,
-    "noVacantes": 24,
+    "vacantes": 16,
+    "noVacantes": 25,
+    "otros": 0,
     "totales": 41
   },
   "ASTURIAS": {
     "vacantes": 26,
-    "noVacantes": 72,
-    "totales": 98
+    "noVacantes": 79,
+    "otros": 0,
+    "totales": 105
   },
   "AVILA": {
-    "vacantes": 3,
-    "noVacantes": 22,
-    "totales": 25
+    "vacantes": 4,
+    "noVacantes": 26,
+    "otros": 0,
+    "totales": 30
   },
   "BADAJOZ": {
-    "vacantes": 12,
-    "noVacantes": 51,
-    "totales": 63
+    "vacantes": 11,
+    "noVacantes": 54,
+    "otros": 0,
+    "totales": 65
   },
   "BARCELONA": {
-    "vacantes": 43,
-    "noVacantes": 132,
-    "totales": 175
+    "vacantes": 42,
+    "noVacantes": 143,
+    "otros": 0,
+    "totales": 185
   },
   "BIZKAIA": {
     "vacantes": 18,
     "noVacantes": 44,
+    "otros": 0,
     "totales": 62
   },
   "BURGOS": {
-    "vacantes": 11,
-    "noVacantes": 34,
-    "totales": 45
+    "vacantes": 13,
+    "noVacantes": 39,
+    "otros": 0,
+    "totales": 52
   },
   "CACERES": {
     "vacantes": 7,
-    "noVacantes": 32,
-    "totales": 39
+    "noVacantes": 41,
+    "otros": 0,
+    "totales": 48
   },
   "CADIZ": {
-    "vacantes": 11,
+    "vacantes": 14,
     "noVacantes": 68,
-    "totales": 79
+    "otros": 0,
+    "totales": 82
   },
   "CANTABRIA": {
     "vacantes": 8,
-    "noVacantes": 38,
-    "totales": 46
+    "noVacantes": 40,
+    "otros": 0,
+    "totales": 48
   },
   "CASTELLON/CASTELLO": {
-    "vacantes": 11,
-    "noVacantes": 34,
-    "totales": 45
+    "vacantes": 12,
+    "noVacantes": 36,
+    "otros": 0,
+    "totales": 48
   },
   "CEUTA": {
     "vacantes": 5,
-    "noVacantes": 21,
-    "totales": 26
+    "noVacantes": 24,
+    "otros": 0,
+    "totales": 29
   },
   "CIUDAD REAL": {
-    "vacantes": 5,
-    "noVacantes": 36,
-    "totales": 41
+    "vacantes": 8,
+    "noVacantes": 41,
+    "otros": 0,
+    "totales": 49
   },
   "CORDOBA": {
-    "vacantes": 9,
-    "noVacantes": 38,
-    "totales": 47
+    "vacantes": 8,
+    "noVacantes": 43,
+    "otros": 0,
+    "totales": 51
   },
   "CUENCA": {
-    "vacantes": 7,
-    "noVacantes": 24,
-    "totales": 31
+    "vacantes": 6,
+    "noVacantes": 30,
+    "otros": 0,
+    "totales": 36
   },
   "GIPUZKOA": {
-    "vacantes": 17,
+    "vacantes": 18,
     "noVacantes": 21,
-    "totales": 38
+    "otros": 0,
+    "totales": 39
   },
   "GIRONA": {
     "vacantes": 13,
-    "noVacantes": 28,
-    "totales": 41
+    "noVacantes": 29,
+    "otros": 0,
+    "totales": 42
   },
   "GRANADA": {
-    "vacantes": 12,
-    "noVacantes": 56,
-    "totales": 68
+    "vacantes": 9,
+    "noVacantes": 70,
+    "otros": 0,
+    "totales": 79
   },
   "GUADALAJARA": {
-    "vacantes": 4,
-    "noVacantes": 21,
-    "totales": 25
+    "vacantes": 6,
+    "noVacantes": 23,
+    "otros": 0,
+    "totales": 29
   },
   "HUELVA": {
-    "vacantes": 4,
-    "noVacantes": 31,
-    "totales": 35
+    "vacantes": 6,
+    "noVacantes": 30,
+    "otros": 0,
+    "totales": 36
   },
   "HUESCA": {
-    "vacantes": 5,
-    "noVacantes": 22,
+    "vacantes": 6,
+    "noVacantes": 21,
+    "otros": 0,
     "totales": 27
   },
   "ILLES BALEARS": {
-    "vacantes": 32,
-    "noVacantes": 58,
-    "totales": 90
+    "vacantes": 38,
+    "noVacantes": 62,
+    "otros": 0,
+    "totales": 100
   },
   "JAEN": {
-    "vacantes": 6,
-    "noVacantes": 37,
-    "totales": 43
+    "vacantes": 5,
+    "noVacantes": 39,
+    "otros": 0,
+    "totales": 44
   },
   "LA RIOJA": {
-    "vacantes": 10,
+    "vacantes": 11,
     "noVacantes": 26,
-    "totales": 36
+    "otros": 0,
+    "totales": 37
   },
   "LAS PALMAS": {
-    "vacantes": 16,
-    "noVacantes": 54,
-    "totales": 70
+    "vacantes": 14,
+    "noVacantes": 57,
+    "otros": 0,
+    "totales": 71
   },
   "LEON": {
-    "vacantes": 12,
-    "noVacantes": 33,
-    "totales": 45
+    "vacantes": 14,
+    "noVacantes": 42,
+    "otros": 0,
+    "totales": 56
   },
   "LLEIDA": {
-    "vacantes": 7,
-    "noVacantes": 31,
+    "vacantes": 8,
+    "noVacantes": 30,
+    "otros": 0,
     "totales": 38
   },
   "LUGO": {
-    "vacantes": 5,
+    "vacantes": 7,
     "noVacantes": 31,
-    "totales": 36
+    "otros": 0,
+    "totales": 38
   },
   "MADRID": {
-    "vacantes": 3124,
-    "noVacantes": 6056,
-    "totales": 9180
+    "vacantes": 3178,
+    "noVacantes": 5759,
+    "otros": 0,
+    "totales": 8937
   },
   "MALAGA": {
-    "vacantes": 9,
-    "noVacantes": 79,
-    "totales": 88
+    "vacantes": 6,
+    "noVacantes": 92,
+    "otros": 0,
+    "totales": 98
   },
   "MELILLA": {
-    "vacantes": 2,
-    "noVacantes": 21,
-    "totales": 23
+    "vacantes": 3,
+    "noVacantes": 23,
+    "otros": 0,
+    "totales": 26
   },
   "MURCIA": {
-    "vacantes": 30,
-    "noVacantes": 90,
-    "totales": 120
+    "vacantes": 32,
+    "noVacantes": 105,
+    "otros": 0,
+    "totales": 137
   },
   "NAVARRA": {
-    "vacantes": 18,
-    "noVacantes": 25,
+    "vacantes": 16,
+    "noVacantes": 27,
+    "otros": 0,
     "totales": 43
   },
   "OURENSE": {
     "vacantes": 4,
-    "noVacantes": 34,
-    "totales": 38
+    "noVacantes": 36,
+    "otros": 0,
+    "totales": 40
   },
   "PALENCIA": {
-    "vacantes": 7,
-    "noVacantes": 23,
-    "totales": 30
+    "vacantes": 8,
+    "noVacantes": 25,
+    "otros": 0,
+    "totales": 33
   },
   "PONTEVEDRA": {
-    "vacantes": 9,
-    "noVacantes": 63,
-    "totales": 72
+    "vacantes": 8,
+    "noVacantes": 78,
+    "otros": 0,
+    "totales": 86
   },
   "S. C. TENERIFE": {
-    "vacantes": 11,
-    "noVacantes": 49,
-    "totales": 60
+    "vacantes": 9,
+    "noVacantes": 56,
+    "otros": 0,
+    "totales": 65
   },
   "SALAMANCA": {
-    "vacantes": 6,
-    "noVacantes": 34,
-    "totales": 40
+    "vacantes": 11,
+    "noVacantes": 41,
+    "otros": 0,
+    "totales": 52
   },
   "SEGOVIA": {
     "vacantes": 4,
-    "noVacantes": 27,
-    "totales": 31
+    "noVacantes": 30,
+    "otros": 0,
+    "totales": 34
   },
   "SEVILLA": {
-    "vacantes": 15,
-    "noVacantes": 105,
-    "totales": 120
+    "vacantes": 20,
+    "noVacantes": 115,
+    "otros": 0,
+    "totales": 135
   },
   "SORIA": {
-    "vacantes": 6,
-    "noVacantes": 23,
-    "totales": 29
+    "vacantes": 5,
+    "noVacantes": 28,
+    "otros": 0,
+    "totales": 33
   },
   "TARRAGONA": {
-    "vacantes": 12,
-    "noVacantes": 32,
+    "vacantes": 11,
+    "noVacantes": 33,
+    "otros": 0,
     "totales": 44
   },
   "TERUEL": {
     "vacantes": 1,
     "noVacantes": 24,
+    "otros": 0,
     "totales": 25
   },
   "TOLEDO": {
-    "vacantes": 15,
-    "noVacantes": 47,
-    "totales": 62
+    "vacantes": 17,
+    "noVacantes": 52,
+    "otros": 0,
+    "totales": 69
   },
   "VALENCIA": {
     "vacantes": 35,
-    "noVacantes": 123,
-    "totales": 158
+    "noVacantes": 133,
+    "otros": 0,
+    "totales": 168
   },
   "VALLADOLID": {
-    "vacantes": 19,
-    "noVacantes": 72,
-    "totales": 91
+    "vacantes": 18,
+    "noVacantes": 77,
+    "otros": 0,
+    "totales": 95
   },
   "ZAMORA": {
-    "vacantes": 5,
-    "noVacantes": 26,
-    "totales": 31
+    "vacantes": 6,
+    "noVacantes": 28,
+    "otros": 0,
+    "totales": 34
   },
   "ZARAGOZA": {
-    "vacantes": 28,
-    "noVacantes": 72,
-    "totales": 100
+    "vacantes": 31,
+    "noVacantes": 75,
+    "otros": 0,
+    "totales": 106
   }
 };
-
-export const PuestosTICenLaRPTAnterior = 11805;
-export const TotalpuestosAGE = 216819;
-export const TotalpuestosIT = 12105;
-export const NuevospuestosTIC = 353;
-export const TotalpuestosA1 = 34208;
-export const TotalpuestosA2 = 34503;
-export const TotalpuestosB = 142;
-export const TotalpuestosC1 = 56446;
-export const TotalpuestosC2 = 10237;
-export const TotalpuestosITdeA1 = 938;
-export const TotalpuestosITdeA2 = 1797;
-export const TotalpuestosITdeB = 5;
-export const TotalpuestosITdeC1 = 5684;
-export const TotalpuestosITdeC2 = 58;
+export const PuestosTICenLaRPTAnterior = 12105;
+export const TotalpuestosAGE = 217540;
+export const TotalpuestosIT = 12125;
+export const NuevospuestosTIC = 29;
+export const AltasPuestosTIC = 24;
+export const EntradasClasificacionTIC = 5;
+export const BajasPuestosTIC = 7;
+export const SalidasClasificacionTIC = 2;
+export const VariacionNetaTIC = 20;
+export const gruposCombinadosAGE = {
+  "A1": 34605,
+  "A1A2": 16872,
+  "A2": 34648,
+  "A2C1": 18448,
+  "B": 139,
+  "C1": 56559,
+  "C1C2": 44654,
+  "C2": 10206,
+  "C2E": 2,
+  "E": 65,
+  "SIN DATO": 1342
+};
+export const gruposCombinadosTIC = {
+  "A1": 944,
+  "A1A2": 1031,
+  "A2": 1800,
+  "A2C1": 1739,
+  "B": 4,
+  "C1": 5695,
+  "C1C2": 837,
+  "C2": 54,
+  "SIN DATO": 21
+};
+export const estadosTIC = {
+  "NV": 8303,
+  "V": 3822
+};
+export const TotalpuestosA1 = 34605;
+export const TotalpuestosITdeA1 = 944;
+export const TotalpuestosA2 = 34648;
+export const TotalpuestosITdeA2 = 1800;
+export const TotalpuestosB = 139;
+export const TotalpuestosITdeB = 4;
+export const TotalpuestosC1 = 56559;
+export const TotalpuestosITdeC1 = 5695;
+export const TotalpuestosC2 = 10206;
+export const TotalpuestosITdeC2 = 54;
+export const metadatosRPT = {
+  "archivoAnterior": "260701-Julio26.xlsx",
+  "archivoActual": "261001-Octubre26.xlsx",
+  "fechaAnterior": "2026-07-01",
+  "fechaActual": "2026-10-01",
+  "generadoEn": "2026-10-13T16:47:26.040757+00:00",
+  "fuente": "https://transparencia.gob.es/publicidad-activa/por-materias/organizacion-empleo/relaciones-puestos-trabajo"
+};
+export const altasRPTIds = [
+  "5936410",
+  "5936411",
+  "5936412",
+  "5936413",
+  "5936741",
+  "5936742",
+  "5936743",
+  "5936744",
+  "5956719",
+  "5958201",
+  "5958202",
+  "5958203",
+  "5959122",
+  "5959123",
+  "5959124",
+  "5959125",
+  "5959126",
+  "5959175",
+  "5963594",
+  "5963595",
+  "5963596",
+  "5963743",
+  "5963748",
+  "5963749"
+];
+export const entradasTICIds = [
+  "2620113",
+  "4760328",
+  "4765097",
+  "5022026",
+  "5134511"
+];
