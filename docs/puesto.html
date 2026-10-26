@@ -1,0 +1,15 @@
+<!doctype html><html lang="es"><head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página trasladada | RPT.OVH</title>
+    <link rel="canonical" href="https://rpt.ovh/puesto/">
+    <script>
+      const destino = (function destinoPuestoLegacy(busqueda) {
+	const id = new URLSearchParams(busqueda).get("puesto")?.trim();
+	return id && /^\d+$/.test(id) ? `/puesto/${encodeURIComponent(id)}/` : "/puesto/";
+})(location.search);
+      document.querySelector('link[rel="canonical"]').href = new URL(destino, location.origin).href;
+      location.replace(destino);
+    </script><noscript><meta http-equiv="refresh" content="0; url=/puesto/"></noscript>
+    </head><body><h1>Esta página ha cambiado de dirección</h1>
+    <p><a href="/puesto/">Continuar a la página actual de RPT.OVH</a>.</p>
+    </body></html>
